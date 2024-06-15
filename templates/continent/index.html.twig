@@ -1,35 +1,52 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Continent index{% endblock %}
+{% block title %}
+	{% trans %}Liste des Continents{% endtrans %}
+{% endblock %}
 
 {% block body %}
-    <h1>Continent index</h1>
+	<h1>{% trans %}Liste des Continents{% endtrans %}</h1>
+	<a href="{{ path('app_continent_new') }}">
+		<button class="btn btn-primary {% trans %}icon new{% endtrans %}">
+			{{ button_label|default('Create new')|trans }}
+		</button>
+	</a>
+	<div class="table-responsive">
+		<table class="table table-dark table-hover">
+			<thead>
+				<tr>
+					<th class="text-secondary bg-info text-center">{% trans %}IdContinent{% endtrans %}</th>
+					<th class="text-secondary bg-info text-center">{% trans %}NomContinent{% endtrans %}</th>
+					<th class="text-secondary bg-info text-center">{% trans %}actions{% endtrans %}</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for continent in continents %}
+					<tr class="text-center">
+						<td>{{ continent.id }}</td>
+						<td>{{ continent.nom }}</td>
+						<td>
+							{# <a
+																																				href="{{ path('app_continent_show', {'idContinent': continent.idContinent}) }}">
+																																				<button class="btn btn-warning">
+																																					{{ button_label|default('show')|trans }}
+																																				</button>
+																																			</a> #}
+							<a href="{{ path('app_continent_edit', {'id': continent.id}) }}">
+								<button class="btn btn-secondary {% trans %}icon edit{% endtrans %}">
+									{{ button_label|default('edit')|trans }}
+								</button>
+							</a>
+							{{ include('continent/_delete_form.html.twig') }}
+						</td>
+					</tr>
+				{% else %}
+					<tr>
+						<td colspan="3">{% trans %}no records found{% endtrans %}</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nom</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for continent in continents %}
-            <tr>
-                <td>{{ continent.id }}</td>
-                <td>{{ continent.nom }}</td>
-                <td>
-                    <a href="{{ path('app_continent_show', {'id': continent.id}) }}">show</a>
-                    <a href="{{ path('app_continent_edit', {'id': continent.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="3">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
-    <a href="{{ path('app_continent_new') }}">Create new</a>
 {% endblock %}

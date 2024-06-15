@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="es" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="K820qi7" resname="langues">
+        <source>langues</source>
+        <target>__langues</target>
+      </trans-unit>
+      <trans-unit id="_2LAwsK" resname="français">
+        <source>français</source>
+        <target>__français</target>
+      </trans-unit>
+      <trans-unit id="ecJi3eY" resname="anglais">
+        <source>anglais</source>
+        <target>__anglais</target>
+      </trans-unit>
+      <trans-unit id="U2gtwGk" resname="espagnol">
+        <source>espagnol</source>
+        <target>__espagnol</target>
+      </trans-unit>
+      <trans-unit id="pu261OZ" resname="Edit Continent">
+        <source>Edit Continent</source>
+        <target>__Edit Continent</target>
+      </trans-unit>
+      <trans-unit id="wcEAnT8" resname="Update">
+        <source>Update</source>
+        <target>__Update</target>
+      </trans-unit>
+      <trans-unit id="VYuhcu_" resname="icon back">
+        <source>icon back</source>
+        <target>__icon back</target>
+      </trans-unit>
+      <trans-unit id="cbvQIds" resname="Liste des Continents">
+        <source>Liste des Continents</source>
+        <target>__Liste des Continents</target>
+      </trans-unit>
+      <trans-unit id="cdoppPu" resname="icon new">
+        <source>icon new</source>
+        <target>__icon new</target>
+      </trans-unit>
+      <trans-unit id="nVDikTc" resname="IdContinent">
+        <source>IdContinent</source>
+        <target>__IdContinent</target>
+      </trans-unit>
+      <trans-unit id="Ahs_Ruj" resname="NomContinent">
+        <source>NomContinent</source>
+        <target>__NomContinent</target>
+      </trans-unit>
+      <trans-unit id="Kw3N1AA" resname="actions">
+        <source>actions</source>
+        <target>__actions</target>
+      </trans-unit>
+      <trans-unit id="ZCmY8L4" resname="icon edit">
+        <source>icon edit</source>
+        <target>__icon edit</target>
+      </trans-unit>
+      <trans-unit id="D5lam8." resname="no records found">
+        <source>no records found</source>
+        <target>__no records found</target>
+      </trans-unit>
+      <trans-unit id="bpzvooL" resname="New Continent">
+        <source>New Continent</source>
+        <target>__New Continent</target>
+      </trans-unit>
+      <trans-unit id="aBLWcFV" resname="Create new Continent">
+        <source>Create new Continent</source>
+        <target>__Create new Continent</target>
+      </trans-unit>
+      <trans-unit id="REE8PZe" resname="Are you sure you want to delete this item?">
+        <source>Are you sure you want to delete this item?</source>
+        <target>__Are you sure you want to delete this item?</target>
+      </trans-unit>
+      <trans-unit id="Sp7iUSD" resname="icon delete">
+        <source>icon delete</source>
+        <target>__icon delete</target>
+      </trans-unit>
+      <trans-unit id="4tClSWj" resname="Delete">
+        <source>Delete</source>
+        <target>__Delete</target>
+      </trans-unit>
+
+    </body>
+  </file>
+</xliff>
