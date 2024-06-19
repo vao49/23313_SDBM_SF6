@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 19 juin 2024 à 14:40
+-- Généré le : mer. 19 juin 2024 à 15:16
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -50,6 +50,27 @@ INSERT INTO `continent` (`id`, `nom`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `couleur`
+--
+
+CREATE TABLE `couleur` (
+  `id` int(11) NOT NULL,
+  `nom_couleur` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Déchargement des données de la table `couleur`
+--
+
+INSERT INTO `couleur` (`id`, `nom_couleur`) VALUES
+(1, 'Blonde'),
+(2, 'Brune'),
+(3, 'Blanche'),
+(4, 'Ambrée');
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `doctrine_migration_versions`
 --
 
@@ -65,7 +86,8 @@ CREATE TABLE `doctrine_migration_versions` (
 
 INSERT INTO `doctrine_migration_versions` (`version`, `executed_at`, `execution_time`) VALUES
 ('DoctrineMigrations\\Version20240613123320', '2024-06-13 14:34:22', 84),
-('DoctrineMigrations\\Version20240614133147', '2024-06-14 15:32:24', 225);
+('DoctrineMigrations\\Version20240614133147', '2024-06-14 15:32:24', 225),
+('DoctrineMigrations\\Version20240619131121', '2024-06-19 15:11:36', 84);
 
 -- --------------------------------------------------------
 
@@ -151,6 +173,12 @@ ALTER TABLE `continent`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Index pour la table `couleur`
+--
+ALTER TABLE `couleur`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Index pour la table `doctrine_migration_versions`
 --
 ALTER TABLE `doctrine_migration_versions`
@@ -181,6 +209,12 @@ ALTER TABLE `pays`
 --
 ALTER TABLE `continent`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
+-- AUTO_INCREMENT pour la table `couleur`
+--
+ALTER TABLE `couleur`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `messenger_messages`
