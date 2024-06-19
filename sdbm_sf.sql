@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 19 juin 2024 à 15:16
+-- Généré le : mer. 19 juin 2024 à 16:29
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -87,7 +87,8 @@ CREATE TABLE `doctrine_migration_versions` (
 INSERT INTO `doctrine_migration_versions` (`version`, `executed_at`, `execution_time`) VALUES
 ('DoctrineMigrations\\Version20240613123320', '2024-06-13 14:34:22', 84),
 ('DoctrineMigrations\\Version20240614133147', '2024-06-14 15:32:24', 225),
-('DoctrineMigrations\\Version20240619131121', '2024-06-19 15:11:36', 84);
+('DoctrineMigrations\\Version20240619131121', '2024-06-19 15:11:36', 84),
+('DoctrineMigrations\\Version20240619142517', '2024-06-19 16:25:26', 80);
 
 -- --------------------------------------------------------
 
@@ -162,6 +163,36 @@ INSERT INTO `pays` (`id`, `continents_id`, `nom_pays`) VALUES
 (38, 1, 'Guillaume'),
 (39, 4, 'AAAAAA');
 
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `typebiere`
+--
+
+CREATE TABLE `typebiere` (
+  `id` int(11) NOT NULL,
+  `nom_type` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Déchargement des données de la table `typebiere`
+--
+
+INSERT INTO `typebiere` (`id`, `nom_type`) VALUES
+(1, 'Bière de Saison'),
+(2, 'Ale'),
+(3, 'Pils et Lager'),
+(4, 'Bière Aromatisée'),
+(5, 'Lambic'),
+(6, 'Abbaye'),
+(7, 'Stout'),
+(8, 'Trappiste'),
+(9, 'Indian Pale Ale'),
+(10, 'Barley Wine'),
+(11, 'Bock'),
+(12, 'Bio'),
+(13, 'Bière de Garde');
+
 --
 -- Index pour les tables déchargées
 --
@@ -201,6 +232,12 @@ ALTER TABLE `pays`
   ADD KEY `IDX_349F3CAE298246F6` (`continents_id`);
 
 --
+-- Index pour la table `typebiere`
+--
+ALTER TABLE `typebiere`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT pour les tables déchargées
 --
 
@@ -227,6 +264,12 @@ ALTER TABLE `messenger_messages`
 --
 ALTER TABLE `pays`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+
+--
+-- AUTO_INCREMENT pour la table `typebiere`
+--
+ALTER TABLE `typebiere`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Contraintes pour les tables déchargées
