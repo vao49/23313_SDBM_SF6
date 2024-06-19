@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 19 juin 2024 à 16:29
+-- Généré le : mer. 19 juin 2024 à 16:41
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -88,7 +88,35 @@ INSERT INTO `doctrine_migration_versions` (`version`, `executed_at`, `execution_
 ('DoctrineMigrations\\Version20240613123320', '2024-06-13 14:34:22', 84),
 ('DoctrineMigrations\\Version20240614133147', '2024-06-14 15:32:24', 225),
 ('DoctrineMigrations\\Version20240619131121', '2024-06-19 15:11:36', 84),
-('DoctrineMigrations\\Version20240619142517', '2024-06-19 16:25:26', 80);
+('DoctrineMigrations\\Version20240619142517', '2024-06-19 16:25:26', 80),
+('DoctrineMigrations\\Version20240619143532', '2024-06-19 16:35:38', 31);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `fabricant`
+--
+
+CREATE TABLE `fabricant` (
+  `id` int(11) NOT NULL,
+  `nom_fabricant` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Déchargement des données de la table `fabricant`
+--
+
+INSERT INTO `fabricant` (`id`, `nom_fabricant`) VALUES
+(1, 'AB InBev'),
+(2, 'Carlsberg'),
+(3, 'Craig Allan'),
+(4, 'Duvel'),
+(5, 'Heineken'),
+(6, 'Notre Dame de Scourmont'),
+(7, 'Diageo'),
+(8, 'ND de Koeningshoeven'),
+(9, 'Parisis'),
+(10, 'Palm');
 
 -- --------------------------------------------------------
 
@@ -216,6 +244,12 @@ ALTER TABLE `doctrine_migration_versions`
   ADD PRIMARY KEY (`version`);
 
 --
+-- Index pour la table `fabricant`
+--
+ALTER TABLE `fabricant`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Index pour la table `messenger_messages`
 --
 ALTER TABLE `messenger_messages`
@@ -252,6 +286,12 @@ ALTER TABLE `continent`
 --
 ALTER TABLE `couleur`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT pour la table `fabricant`
+--
+ALTER TABLE `fabricant`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT pour la table `messenger_messages`
