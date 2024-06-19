@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+ {% block body %}
+    <h1>{% trans %}Une erreur inconnue !!!{% endtrans %}</h1>
+
+    <p>
+       {% trans %}Vérifiez votre URL ou bien{% endtrans %}
+       <a href="{{ path('app_main') }}" > {% trans %}Retour à la page d'accueil{% endtrans %}</a>
+    </p>
+    
+ {% endblock %}

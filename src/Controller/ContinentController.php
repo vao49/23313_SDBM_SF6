@@ -33,6 +33,11 @@ class ContinentController extends AbstractController
             $entityManager->persist($continent);
             $entityManager->flush();
 
+            $this->addFlash(
+                'success',
+                'Le Continent a bien été ajouté'
+            );
+
             return $this->redirectToRoute('app_continent_index', [], Response::HTTP_SEE_OTHER);
         }
 
@@ -45,6 +50,11 @@ class ContinentController extends AbstractController
     #[Route('/{id}', name: 'app_continent_show', methods: ['GET'])]
     public function show(Continent $continent): Response
     {
+        $this->addFlash(
+            'info',
+            'Voici le Continent demandé'
+        );
+
         return $this->render('continent/show.html.twig', [
             'continent' => $continent,
         ]);
@@ -59,8 +69,13 @@ class ContinentController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
 
+            $this->addFlash(
+                'success',
+                'Le Continent a bien été modifié'
+            );
+
             return $this->redirectToRoute('app_continent_index', [], Response::HTTP_SEE_OTHER);
-        }
+        } 
 
         return $this->render('continent/edit.html.twig', [
             'continent' => $continent,
@@ -74,6 +89,11 @@ class ContinentController extends AbstractController
         if ($this->isCsrfTokenValid('delete'.$continent->getId(), $request->getPayload()->getString('_token'))) {
             $entityManager->remove($continent);
             $entityManager->flush();
+
+            $this->addFlash(
+                'success',
+                'Le Continent a bien été supprimé'
+            );
         }
 
         return $this->redirectToRoute('app_continent_index', [], Response::HTTP_SEE_OTHER);

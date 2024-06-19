@@ -81,6 +81,38 @@
         <source>Delete</source>
         <target> Delete</target>
       </trans-unit>
+      <trans-unit id="cBS6utD" resname="Références">
+        <source>Références</source>
+        <target>__Références</target>
+      </trans-unit>
+      <trans-unit id="ct4TGa6" resname="gestion des pays">
+        <source>gestion des pays</source>
+        <target>__gestion des pays</target>
+      </trans-unit>
+      <trans-unit id="kTdg3Vj" resname="gestion des continents">
+        <source>gestion des continents</source>
+        <target>__gestion des continents</target>
+      </trans-unit>
+      <trans-unit id="NwssFiP" resname="Une erreur inconnue !!!">
+        <source>Une erreur inconnue !!!</source>
+        <target>__Une erreur inconnue !!!</target>
+      </trans-unit>
+      <trans-unit id="4uavBrT" resname="Vérifiez votre URL ou bien">
+        <source>Vérifiez votre URL ou bien</source>
+        <target>__Vérifiez votre URL ou bien</target>
+      </trans-unit>
+      <trans-unit id="A0kfbRi" resname="Retour à la page d'accueil">
+        <source>Retour à la page d'accueil</source>
+        <target>__Retour à la page d'accueil</target>
+      </trans-unit>
+      <trans-unit id="Cjmipu2" resname="Cette Page n'existe pas">
+        <source>Cette Page n'existe pas</source>
+        <target>__Cette Page n'existe pas</target>
+      </trans-unit>
+      <trans-unit id="R3E7Ptm" resname="La requête n'a pas pu aboutir. Vérifiez votre URL ou bien">
+        <source>La requête n'a pas pu aboutir. Vérifiez votre URL ou bien</source>
+        <target>__La requête n'a pas pu aboutir. Vérifiez votre URL ou bien</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
