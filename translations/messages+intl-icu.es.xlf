@@ -125,7 +125,6 @@
         <source>gestion des fabricants</source>
         <target>__gestion des fabricants</target>
       </trans-unit>
-            <!-- Ajouté à la main -->
       <trans-unit id="nz33U6Q" resname="Create new">
         <source>Create new</source>
         <target>Nuevo</target>
@@ -134,7 +133,7 @@
         <source>edit</source>
         <target>__edit</target>
       </trans-unit>
-            <trans-unit id="U0M9PNE" resname="back to list">
+      <trans-unit id="U0M9PNE" resname="back to list">
         <source>back to list</source>
         <target>__Retour à la liste</target>
       </trans-unit>
@@ -142,9 +141,17 @@
         <source>Save</source>
         <target>__Enregistrer</target>
       </trans-unit>
-            <trans-unit id="ssEkU20" resname="Nom">
+      <trans-unit id="ssEkU20" resname="Nom">
         <source>Nom</source>
         <target>Nombre</target>
+      </trans-unit>
+      <trans-unit id="CzswNcC" resname="gestion des marques">
+        <source>gestion des marques</source>
+        <target>__gestion des marques</target>
+      </trans-unit>
+      <trans-unit id="Di6IwlJ" resname="Marque Indépendante">
+        <source>Marque Indépendante</source>
+        <target>__Marque Indépendante</target>
       </trans-unit>
     </body>
   </file>

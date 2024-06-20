@@ -28,7 +28,7 @@ function migrer_une_table($migratUneTable, $SOURCE, $DESTINATION)
         print_r($SOURCE->query($sql));
         echo "<table border='2px'>";
         foreach ($SOURCE->query($sql) as $row) {
-            //print_r($row);
+            var_dump($row);
             echo "<tr>";
 
             // Affichage des données à inserer
@@ -38,10 +38,24 @@ function migrer_une_table($migratUneTable, $SOURCE, $DESTINATION)
             $values = "";
             // Génération des valeurs à insérer
             foreach ($migratUneTable["source"][1] as $colonne) {
+                
+                
+                // Modification afin de gérer les valeurs NULL
+                
                 if ($values == "") {
-                    $values .=  $DESTINATION->quote($row[$colonne]);
+                    if ($row[$colonne] == NULL) {
+                        $values .=  "NULL";
+                    } else {
+                        $values .=  $DESTINATION->quote($row[$colonne]);
+                    }
+                    
                 } else {
-                    $values .= "," . $DESTINATION->quote($row[$colonne]);
+                    if ($row[$colonne] == NULL) {
+                        $values .=  ", NULL";
+                    } else {
+                        $values .= "," . $DESTINATION->quote($row[$colonne]);
+                    }
+                  
                 }
                 // Remarque : On ajoute des '' quelque soit le format (num ou chaine)
 

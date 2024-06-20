@@ -145,6 +145,14 @@
         <source>Nom</source>
         <target>Nom</target>
       </trans-unit>
+      <trans-unit id="CzswNcC" resname="gestion des marques">
+        <source>gestion des marques</source>
+        <target>__gestion des marques</target>
+      </trans-unit>
+      <trans-unit id="Di6IwlJ" resname="Marque Indépendante">
+        <source>Marque Indépendante</source>
+        <target>__Marque Indépendante</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
