@@ -113,6 +113,39 @@
         <source>La requête n'a pas pu aboutir. Vérifiez votre URL ou bien</source>
         <target>__La requête n'a pas pu aboutir. Vérifiez votre URL ou bien</target>
       </trans-unit>
+      <trans-unit id="fBgjK64" resname="gestion des couleurs">
+        <source>gestion des couleurs</source>
+        <target>__gestion des couleurs</target>
+      </trans-unit>
+      <trans-unit id="pQAFXY." resname="gestion des types">
+        <source>gestion des types</source>
+        <target>__gestion des types</target>
+      </trans-unit>
+      <trans-unit id="mS7ScAr" resname="gestion des fabricants">
+        <source>gestion des fabricants</source>
+        <target>__gestion des fabricants</target>
+      </trans-unit>
+                  <!-- Ajouté à la main -->
+      <trans-unit id="nz33U6Q" resname="Create new">
+        <source>Create new</source>
+        <target>Create new</target>
+      </trans-unit>
+      <trans-unit id="JiEhxTc" resname="edit">
+        <source>edit</source>
+        <target>edit</target>
+      </trans-unit>
+            <trans-unit id="U0M9PNE" resname="back to list">
+        <source>back to list</source>
+        <target>back to list</target>
+      </trans-unit>
+      <trans-unit id="FQn1YfJ" resname="Save">
+        <source>Save</source>
+        <target>Save</target>
+      </trans-unit>
+            <trans-unit id="ssEkU20" resname="Nom">
+        <source>Nom</source>
+        <target>Name</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
