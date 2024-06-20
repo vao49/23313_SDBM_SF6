@@ -28,7 +28,7 @@ function migrer_une_table($migratUneTable, $SOURCE, $DESTINATION)
         print_r($SOURCE->query($sql));
         echo "<table border='2px'>";
         foreach ($SOURCE->query($sql) as $row) {
-            var_dump($row);
+            // var_dump($row);
             echo "<tr>";
 
             // Affichage des données à inserer

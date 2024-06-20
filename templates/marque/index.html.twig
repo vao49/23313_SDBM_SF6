@@ -25,7 +25,10 @@
                 {% else %}<td>{{ marque.fabricants.nomFabricant }}</td>
                 {% endif %} 
                  {# <td>{{ marque.fabricants.nomFabricant }}</td> #}
-                <td>{{ marque.pays.nomPays }}</td>
+                
+                {% if marque.pays  == NULL %}<td>{% trans %}non connu{% endtrans %}</td>
+                {% else %}<td>{{ marque.pays.nomPays }}</td>
+                {% endif %} 
                 <td>
                     <a href="{{ path('app_marque_show', {'id': marque.id}) }}">show</a>
                     <a href="{{ path('app_marque_edit', {'id': marque.id}) }}">edit</a>
