@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vendre index{% endblock %}
+
+{% block body %}
+    <h1>Vendre index</h1>
+
+{# {{dump(vendres)}} #}
+{% set total = 0.0 %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Code Article</th>
+                <th>Nom</th>
+                <th>Quantite</th>
+                <th>PrixVente</th>
+                <th>Sous Total</th>
+                {# <th>Annee</th>
+                <th>NumeroTicket</th> #}
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for vendre in vendres %}
+            <tr>
+            <td>{{ vendre.article.id }}</td>
+             <td>{{ vendre.article.nomArticle }}</td>
+                <td>{{ vendre.quantite }}</td>
+                <td>{{ vendre.prixVente }}</td>
+                <td>{{ vendre.prixVente * vendre.quantite }}</td>
+                {% set total = total + vendre.prixVente * vendre.quantite %}
+                {# <td>{{ vendre.annee }}</td>
+                <td>{{ vendre.numeroTicket }}</td> #}
+                <td>
+                    <a href="{{ path('app_vendre_show', {'annee': vendre.annee}) }}">show</a>
+                    <a href="{{ path('app_vendre_edit', {'annee': vendre.annee}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <h2 class="text-center text-danger fs-1">Total du ticket : {{ total }} €</h2>
+    <a href="{{ path('app_vendre_new') }}">Create new</a>
+{% endblock %}

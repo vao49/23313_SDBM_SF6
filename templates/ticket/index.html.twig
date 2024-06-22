@@ -23,6 +23,7 @@
                 <td>
                     <a href="{{ path('app_ticket_show', {'annee': ticket.annee, 'numeroTicket': ticket.numeroTicket}) }}">show</a>
                     <a href="{{ path('app_ticket_edit', {'annee': ticket.annee, 'numeroTicket': ticket.numeroTicket}) }}">edit</a>
+                    <a href="{{ path('app_vendre_index', {'annee': ticket.annee, 'no': ticket.numeroTicket}) }}">detail</a>
                 </td>
             </tr>
         {% else %}
