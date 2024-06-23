@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Vendre;
+use App\Entity\Article;
 use App\Form\VendreType;
 use App\Repository\VendreRepository;
 use Doctrine\ORM\EntityManagerInterface;
@@ -10,6 +11,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
+
 
 #[Route('/vendre')]
 class VendreController extends AbstractController
@@ -27,15 +29,17 @@ class VendreController extends AbstractController
         return $this->render('vendre/index.html.twig', [
             'vendres' =>  $vendreRepository
             // ->findAll();
-            ->findByTicketId($annee, $no),
+            ->findByTicketId($annee, $no), 'annee' =>$annee, 'no' =>$no,
         ]);
 
     }
 
-    #[Route('/new', name: 'app_vendre_new', methods: ['GET', 'POST'])]
-    public function new(Request $request, EntityManagerInterface $entityManager): Response
+    #[Route('/new/{annee}/{no}', name: 'app_vendre_new', methods: ['GET', 'POST'])]
+    public function new($annee, $no,Request $request, EntityManagerInterface $entityManager): Response
     {
         $vendre = new Vendre();
+        $vendre->setAnnee($annee);
+        $vendre->setNumeroTicket($no);
         $form = $this->createForm(VendreType::class, $vendre);
         $form->handleRequest($request);
 
@@ -43,12 +47,12 @@ class VendreController extends AbstractController
             $entityManager->persist($vendre);
             $entityManager->flush();
 
-            return $this->redirectToRoute('app_vendre_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('app_vendre_index', ['annee'=> $annee, 'no'=> $no], Response::HTTP_SEE_OTHER);
         }
 
         return $this->render('vendre/new.html.twig', [
             'vendre' => $vendre,
-            'form' => $form,
+            'form' => $form, 'annee' =>$annee, 'no' =>$no,
         ]);
     }
 
@@ -60,32 +64,45 @@ class VendreController extends AbstractController
         ]);
     }
 
-    #[Route('/{annee}/edit', name: 'app_vendre_edit', methods: ['GET', 'POST'])]
-    public function edit(Request $request, Vendre $vendre, EntityManagerInterface $entityManager): Response
+    #[Route('/edit/{annee}/{no}/{id}', name: 'app_vendre_edit', methods: ['GET', 'POST'])]
+    public function edit($annee, $no, Article $id,Request $request,  EntityManagerInterface $entityManager): Response
     {
+ 
+        // OBLIGE de charger manuellement l'objet VENDRE
+        $vendre = $entityManager->find("App\Entity\Vendre", 
+        array("annee" => $annee, "numeroTicket" => $no, "article" => $id));
+        // dd($vendre);
         $form = $this->createForm(VendreType::class, $vendre);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
 
-            return $this->redirectToRoute('app_vendre_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('app_vendre_index', ['annee'=> $annee, 'no'=> $no], Response::HTTP_SEE_OTHER);
         }
 
         return $this->render('vendre/edit.html.twig', [
             'vendre' => $vendre,
             'form' => $form,
+            'annee' => $annee,
+            'no' => $no,
+            'qte' => $vendre->getQuantite(),
+            'prix' => $vendre->getPrixVente(),
         ]);
     }
 
-    #[Route('/{annee}', name: 'app_vendre_delete', methods: ['POST'])]
-    public function delete(Request $request, Vendre $vendre, EntityManagerInterface $entityManager): Response
+    #[Route('/delete/{annee}/{no}/{id}', name: 'app_vendre_delete', methods: ['POST'])]
+    public function delete($annee, $no,Article $id, Request $request,  EntityManagerInterface $entityManager): Response
     {
+        // OBLIGE de charger manuellement l'objet VENDRE
+        $vendre = $entityManager->find("App\Entity\Vendre", 
+        array("annee" => $annee, "numeroTicket" => $no, "article" => $id));
+        // dd($vendre);
         if ($this->isCsrfTokenValid('delete'.$vendre->getAnnee(), $request->getPayload()->getString('_token'))) {
             $entityManager->remove($vendre);
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('app_vendre_index', [], Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('app_vendre_index', ['annee'=> $annee, 'no'=> $no], Response::HTTP_SEE_OTHER);
     }
 }

@@ -3,7 +3,7 @@
 {% block title %}Vendre index{% endblock %}
 
 {% block body %}
-    <h1>Vendre index</h1>
+    <h1>{%trans%}Detail Ticket{%endtrans%} {{annee}}/{{no}}</h1>
 
 {# {{dump(vendres)}} #}
 {% set total = 0.0 %}
@@ -11,7 +11,7 @@
         <thead>
             <tr>
                 <th>Code Article</th>
-                <th>Nom</th>
+                <th>Nom / Vol / °</th>
                 <th>Quantite</th>
                 <th>PrixVente</th>
                 <th>Sous Total</th>
@@ -24,7 +24,7 @@
         {% for vendre in vendres %}
             <tr>
             <td>{{ vendre.article.id }}</td>
-             <td>{{ vendre.article.nomArticle }}</td>
+             <td>{{ vendre.article.nomArticle }} / {{ vendre.article.volume }} / {{ vendre.article.titrage }}</td>
                 <td>{{ vendre.quantite }}</td>
                 <td>{{ vendre.prixVente }}</td>
                 <td>{{ vendre.prixVente * vendre.quantite }}</td>
@@ -32,8 +32,9 @@
                 {# <td>{{ vendre.annee }}</td>
                 <td>{{ vendre.numeroTicket }}</td> #}
                 <td>
-                    <a href="{{ path('app_vendre_show', {'annee': vendre.annee}) }}">show</a>
-                    <a href="{{ path('app_vendre_edit', {'annee': vendre.annee}) }}">edit</a>
+                    {# <a href="{{ path('app_vendre_show', {'annee': vendre.annee}) }}">show</a> #}
+                    <a class="btn btn-secondary btn-sm {% trans %}icon edit{% endtrans %}" href="{{ path('app_vendre_edit', {'annee': vendre.annee, 'no':no, 'id':vendre.article.id }) }}">{% trans %}edit{% endtrans %}</a>
+                    {{ include('vendre/_delete_form.html.twig') }}
                 </td>
             </tr>
         {% else %}
@@ -44,5 +45,5 @@
         </tbody>
     </table>
     <h2 class="text-center text-danger fs-1">Total du ticket : {{ total }} €</h2>
-    <a href="{{ path('app_vendre_new') }}">Create new</a>
+    <a href="{{ path('app_vendre_new', {'annee': annee, 'no':no}) }}">Create new</a>
 {% endblock %}
