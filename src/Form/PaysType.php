@@ -9,6 +9,8 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Translation\TranslatableMessage;
+use app\Repository\ContinentRepository;
 
 class PaysType extends AbstractType
 {
@@ -16,14 +18,20 @@ class PaysType extends AbstractType
     {
         $builder
             ->add('nomPays', TextType::class, [
-                'attr' => ['class' => 'form-control']
+                'label' => new TranslatableMessage('nomPays'),
+                'label_attr' => ['class' => 'fw-bold'],
+                'attr' => ['class' => 'form-control' ]
             ])
             // ->add('continents', EntityType::class, [
             //     'class' => Continent::class,
             //     'choice_label' => 'id',
             // ])
             ->add('continents', null, [
-                'attr' => ['class' => 'form-control']
+                'label_attr' => ['class' => 'fw-bold'],
+                'attr' => ['class' => 'form-control'],
+                'query_builder' => function(ContinentRepository $repository) { 
+                    return $repository->createQueryBuilder('u')->orderBy('u.nom', 'ASC');
+                }
             ])
         ;
     }

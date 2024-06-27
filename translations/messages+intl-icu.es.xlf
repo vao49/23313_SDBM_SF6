@@ -213,6 +213,10 @@
         <source>Detail Ticket</source>
         <target>__Detail Ticket</target>
       </trans-unit>
+      <trans-unit id="KYPCWQE" resname="nomPays">
+        <source>nomPays</source>
+        <target>__nomPays</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

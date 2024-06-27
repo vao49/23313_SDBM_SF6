@@ -27,7 +27,7 @@
       </trans-unit>
       <trans-unit id="wcEAnT8" resname="Update">
         <source>Update</source>
-        <target>__Update</target>
+        <target>Update</target>
       </trans-unit>
       <trans-unit id="VYuhcu_" resname="icon back">
         <source>icon back</source>
@@ -83,47 +83,47 @@
       </trans-unit>
       <trans-unit id="cBS6utD" resname="Références">
         <source>Références</source>
-        <target>__Références</target>
+        <target>References</target>
       </trans-unit>
       <trans-unit id="ct4TGa6" resname="gestion des pays">
         <source>gestion des pays</source>
-        <target>__gestion des pays</target>
+        <target>Country management</target>
       </trans-unit>
       <trans-unit id="kTdg3Vj" resname="gestion des continents">
         <source>gestion des continents</source>
-        <target>__gestion des continents</target>
+        <target>management of Continents</target>
       </trans-unit>
       <trans-unit id="NwssFiP" resname="Une erreur inconnue !!!">
         <source>Une erreur inconnue !!!</source>
-        <target>__Une erreur inconnue !!!</target>
+        <target>An error has occurred !!!</target>
       </trans-unit>
       <trans-unit id="4uavBrT" resname="Vérifiez votre URL ou bien">
         <source>Vérifiez votre URL ou bien</source>
-        <target>__Vérifiez votre URL ou bien</target>
+        <target>Check your URL or</target>
       </trans-unit>
       <trans-unit id="A0kfbRi" resname="Retour à la page d'accueil">
         <source>Retour à la page d'accueil</source>
-        <target>__Retour à la page d'accueil</target>
+        <target>Back to Home</target>
       </trans-unit>
       <trans-unit id="Cjmipu2" resname="Cette Page n'existe pas">
         <source>Cette Page n'existe pas</source>
-        <target>__Cette Page n'existe pas</target>
+        <target>this page does not exist</target>
       </trans-unit>
       <trans-unit id="R3E7Ptm" resname="La requête n'a pas pu aboutir. Vérifiez votre URL ou bien">
         <source>La requête n'a pas pu aboutir. Vérifiez votre URL ou bien</source>
-        <target>__La requête n'a pas pu aboutir. Vérifiez votre URL ou bien</target>
+        <target>The request could not be completed. Check your URL or</target>
       </trans-unit>
       <trans-unit id="fBgjK64" resname="gestion des couleurs">
         <source>gestion des couleurs</source>
-        <target>__gestion des couleurs</target>
+        <target>color management</target>
       </trans-unit>
       <trans-unit id="pQAFXY." resname="gestion des types">
         <source>gestion des types</source>
-        <target>__gestion des types</target>
+        <target>type management</target>
       </trans-unit>
       <trans-unit id="mS7ScAr" resname="gestion des fabricants">
         <source>gestion des fabricants</source>
-        <target>__gestion des fabricants</target>
+        <target>manufacturer management</target>
       </trans-unit>
       <trans-unit id="nz33U6Q" resname="Create new">
         <source>Create new</source>
@@ -147,71 +147,75 @@
       </trans-unit>
       <trans-unit id="CzswNcC" resname="gestion des marques">
         <source>gestion des marques</source>
-        <target>__gestion des marques</target>
+        <target>brand management</target>
       </trans-unit>
       <trans-unit id="Di6IwlJ" resname="Marque Indépendante">
         <source>Marque Indépendante</source>
-        <target>__Marque Indépendante</target>
+        <target>Independent Brand</target>
       </trans-unit>
       <trans-unit id="_S8D8Rx" resname="annee">
         <source>annee</source>
-        <target>__annee</target>
+        <target>year</target>
       </trans-unit>
       <trans-unit id="zeYlg_Z" resname="numeroTicket">
         <source>numeroTicket</source>
-        <target>__numeroTicket</target>
+        <target>Ticket Number</target>
       </trans-unit>
       <trans-unit id="BFGJQLC" resname="dateVente">
         <source>dateVente</source>
-        <target>__dateVente</target>
+        <target>date of sale</target>
       </trans-unit>
       <trans-unit id="c7.OjVn" resname="idArticle">
         <source>idArticle</source>
-        <target>__idArticle</target>
+        <target>Article Id</target>
       </trans-unit>
       <trans-unit id="1exzEqS" resname="quantite">
         <source>quantite</source>
-        <target>__quantite</target>
+        <target>quantity</target>
       </trans-unit>
       <trans-unit id="0hZGzxx" resname="prixVente">
         <source>prixVente</source>
-        <target>__prixVente</target>
+        <target>selling price</target>
       </trans-unit>
       <trans-unit id="9jaI41K" resname="gestion des articles">
         <source>gestion des articles</source>
-        <target>__gestion des articles</target>
+        <target>item management</target>
       </trans-unit>
       <trans-unit id="JYyppUC" resname="gestion des tickets">
         <source>gestion des tickets</source>
-        <target>__gestion des tickets</target>
+        <target>ticket management</target>
       </trans-unit>
       <trans-unit id="hB3tBca" resname="non connu">
         <source>non connu</source>
-        <target>__non connu</target>
+        <target>unknown</target>
       </trans-unit>
       <trans-unit id="CrtfUSR" resname="Edit Pays">
         <source>Edit Pays</source>
-        <target>__Edit Pays</target>
+        <target>Edit Country</target>
       </trans-unit>
       <trans-unit id="cAXpdK2" resname="Pays index">
         <source>Pays index</source>
-        <target>__Pays index</target>
+        <target>Country List</target>
       </trans-unit>
       <trans-unit id="EhVukhv" resname="Id">
         <source>Id</source>
-        <target>__Id</target>
+        <target>Id</target>
       </trans-unit>
       <trans-unit id="oXyoWKF" resname="NomPays">
         <source>NomPays</source>
-        <target>__NomPays</target>
+        <target>Country Name</target>
       </trans-unit>
       <trans-unit id="I9gI.Tu" resname="Create new Pays">
         <source>Create new Pays</source>
-        <target>__Create new Pays</target>
+        <target>Create new Pays</target>
       </trans-unit>
       <trans-unit id="aiaugIM" resname="Detail Ticket">
         <source>Detail Ticket</source>
-        <target>__Detail Ticket</target>
+        <target>Ticket Details</target>
+      </trans-unit>
+      <trans-unit id="KYPCWQE" resname="nomPays">
+        <source>nomPays</source>
+        <target>Country Name</target>
       </trans-unit>
     </body>
   </file>
