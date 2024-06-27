@@ -1,17 +1,21 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Pays index{% endblock %}
+{% block title %}{% trans %}Pays index{% endtrans %}{% endblock %}
 
 {% block body %}
-    <h1>Pays index</h1>
- 
+    <h1>{% trans %}Pays index{% endtrans %}</h1>
+    <a href="{{ path('app_pays_new') }}">
+       	<button class="btn btn-primary {% trans %}icon new{% endtrans %}">
+			{{ button_label|default('Create new')|trans }}
+		</button>
+    </a>
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>NomPays</th>
-                <th>NomContinent</th>
-                <th>actions</th>
+                <th>{% trans %}Id{% endtrans %}</th>
+                <th>{% trans %}NomPays{% endtrans %}</th>
+                <th>{% trans %}NomContinent{% endtrans %}</th>
+                <th>{% trans %}actions{% endtrans %}</th>
             </tr>
         </thead>
         <tbody>
@@ -21,17 +25,22 @@
                 <td>{{ pay.nomPays }}</td>
                 <td>{{ pay.continents.nom }}</td>
                 <td>
-                    <a href="{{ path('app_pays_show', {'id': pay.id}) }}">show</a>
-                    <a href="{{ path('app_pays_edit', {'id': pay.id}) }}">edit</a>
+                    {# <a href="{{ path('app_pays_show', {'id': pay.id}) }}">{% trans %}show{% endtrans %}</a> #}
+                    <a href="{{ path('app_pays_edit', {'id': pay.id}) }}">
+                        <button class="btn btn-secondary btn-sm {% trans %}icon edit{% endtrans %}">
+                                {{ button_label|default('edit')|trans }}
+                        </button>
+                    </a>
+                     {{ include('pays/_delete_form.html.twig') }}
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="3">no records found</td>
+                <td colspan="3">{% trans %}no records found{% endtrans %}</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('app_pays_new') }}">Create new</a>
+    
 {% endblock %}

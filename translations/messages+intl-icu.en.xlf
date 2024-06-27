@@ -153,6 +153,66 @@
         <source>Marque Indépendante</source>
         <target>__Marque Indépendante</target>
       </trans-unit>
+      <trans-unit id="_S8D8Rx" resname="annee">
+        <source>annee</source>
+        <target>__annee</target>
+      </trans-unit>
+      <trans-unit id="zeYlg_Z" resname="numeroTicket">
+        <source>numeroTicket</source>
+        <target>__numeroTicket</target>
+      </trans-unit>
+      <trans-unit id="BFGJQLC" resname="dateVente">
+        <source>dateVente</source>
+        <target>__dateVente</target>
+      </trans-unit>
+      <trans-unit id="c7.OjVn" resname="idArticle">
+        <source>idArticle</source>
+        <target>__idArticle</target>
+      </trans-unit>
+      <trans-unit id="1exzEqS" resname="quantite">
+        <source>quantite</source>
+        <target>__quantite</target>
+      </trans-unit>
+      <trans-unit id="0hZGzxx" resname="prixVente">
+        <source>prixVente</source>
+        <target>__prixVente</target>
+      </trans-unit>
+      <trans-unit id="9jaI41K" resname="gestion des articles">
+        <source>gestion des articles</source>
+        <target>__gestion des articles</target>
+      </trans-unit>
+      <trans-unit id="JYyppUC" resname="gestion des tickets">
+        <source>gestion des tickets</source>
+        <target>__gestion des tickets</target>
+      </trans-unit>
+      <trans-unit id="hB3tBca" resname="non connu">
+        <source>non connu</source>
+        <target>__non connu</target>
+      </trans-unit>
+      <trans-unit id="CrtfUSR" resname="Edit Pays">
+        <source>Edit Pays</source>
+        <target>__Edit Pays</target>
+      </trans-unit>
+      <trans-unit id="cAXpdK2" resname="Pays index">
+        <source>Pays index</source>
+        <target>__Pays index</target>
+      </trans-unit>
+      <trans-unit id="EhVukhv" resname="Id">
+        <source>Id</source>
+        <target>__Id</target>
+      </trans-unit>
+      <trans-unit id="oXyoWKF" resname="NomPays">
+        <source>NomPays</source>
+        <target>__NomPays</target>
+      </trans-unit>
+      <trans-unit id="I9gI.Tu" resname="Create new Pays">
+        <source>Create new Pays</source>
+        <target>__Create new Pays</target>
+      </trans-unit>
+      <trans-unit id="aiaugIM" resname="Detail Ticket">
+        <source>Detail Ticket</source>
+        <target>__Detail Ticket</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -26,14 +26,8 @@
 						<td>{{ continent.id }}</td>
 						<td>{{ continent.nom }}</td>
 						<td>
-							{# <a
-																																				href="{{ path('app_continent_show', {'idContinent': continent.idContinent}) }}">
-																																				<button class="btn btn-warning">
-																																					{{ button_label|default('show')|trans }}
-																																				</button>
-																																			</a> #}
 							<a href="{{ path('app_continent_edit', {'id': continent.id}) }}">
-								<button class="btn btn-secondary {% trans %}icon edit{% endtrans %}">
+								<button class="btn btn-secondary btn-sm {% trans %}icon edit{% endtrans %}">
 									{{ button_label|default('edit')|trans }}
 								</button>
 							</a>
