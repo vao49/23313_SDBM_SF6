@@ -22,10 +22,10 @@
             <tbody>
             {% for pay in pays %}
                 <tr>
-                    <td>{{ pay.id }}</td>
-                    <td>{{ pay.nomPays }}</td>
-                    <td>{{ pay.continents.nom }}</td>
-                    <td>
+                    <td class="text-center">{{ pay.id }}</td>
+                    <td class="text-center">{{ pay.nomPays }}</td>
+                    <td class="text-center">{{ pay.continents.nom }}</td>
+                    <td class="text-center">
                         {# <a href="{{ path('app_pays_show', {'id': pay.id}) }}">{% trans %}show{% endtrans %}</a> #}
                         <a href="{{ path('app_pays_edit', {'id': pay.id}) }}">
                             <button class="btn btn-secondary btn-sm {% trans %}icon edit{% endtrans %}">

@@ -23,9 +23,9 @@
 			<tbody>
 				{% for continent in continents %}
 					<tr class="text-center">
-						<td>{{ continent.id }}</td>
-						<td>{{ continent.nom }}</td>
-						<td>
+						<td class="text-center">{{ continent.id }}</td>
+						<td class="text-center">{{ continent.nom }}</td>
+						<td class="text-center">
 							<a href="{{ path('app_continent_edit', {'id': continent.id}) }}">
 								<button class="btn btn-secondary btn-sm {% trans %}icon edit{% endtrans %}">
 									{{ button_label|default('edit')|trans }}
