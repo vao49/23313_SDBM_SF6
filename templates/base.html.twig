@@ -14,19 +14,29 @@
 		<!-- Bootstrap icons CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> {% block stylesheets %}{% endblock %}
 
+	    <!--  Lien vers la feuille de style -->
+		<link href="{{asset('css/main.css')}}" rel="stylesheet" />
 
 		<!-- Bootstrap 5 Latest compiled JavaScript -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+        <link href="
+			https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.min.css
+			" rel="stylesheet">
+
 		{% block javascripts %}
+			<script src="
+			https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.all.min.js
+			"></script>
 			{% block importmap %}
 				{{ importmap('app') }}
 			{% endblock %}
+
 		{% endblock %}
 	</head>
 	<body>
 	
-			<header>
+			<header class="fixed-top vh-45">
 				<div class="container-fluid">
 					<img class="img-fluid w-100" src="{{asset('images/bandeau_page_du_monde2.jpg')}}"/>
 					<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -87,8 +97,7 @@
 				</div>
 			</header>
 
-
-			<main class="container-fluid p-5">
+			<main class="container-fluid">
 				<div
 					class="col-12">
 					{# read and display all flash messages #}
@@ -99,6 +108,7 @@
 								<strong>{{ label|trans }}</strong>
 								{{ message|trans }}
 							</div>
+						 
 						{% endfor %}
 					{% endfor %}
 					{% block body %}{% endblock %}
@@ -119,6 +129,28 @@
 				<li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
 				</ul>
 			</footer>
-	
+			<script>
+			   {# Swal.fire({
+				title: "The Internet?",
+				text: "That thing is still around?",
+				icon: "question"
+				}); #}
+				{# Swal.fire({
+				icon: "success",
+				title: "Oops...",
+				text: "Something went wrong!",
+				footer: '<a href="#">Why do I have this issue?</a>'
+				}); #}
+				{# {% for label, messages in app.flashes %}
+						{% for message in messages %}
+							 	Swal.fire({
+								icon: "{{ label }}",
+								title: "{{ label }}",
+								text: {{ message|trans }}
+								 
+								});
+						{% endfor %}
+				{% endfor %} #}
+			</script>
 	</body> 
 </html>
