@@ -217,6 +217,26 @@
         <source>nomPays</source>
         <target>__nomPays</target>
       </trans-unit>
+      <trans-unit id="j75Vu7n" resname="Ticket index">
+        <source>Ticket index</source>
+        <target>__Ticket index</target>
+      </trans-unit>
+      <trans-unit id="s2BIFax" resname="Annee">
+        <source>Annee</source>
+        <target>__Annee</target>
+      </trans-unit>
+      <trans-unit id="XAIUcWY" resname="NumeroTicket">
+        <source>NumeroTicket</source>
+        <target>__NumeroTicket</target>
+      </trans-unit>
+      <trans-unit id="j4a8CcI" resname="DateVente">
+        <source>DateVente</source>
+        <target>__DateVente</target>
+      </trans-unit>
+      <trans-unit id="dP5ctFl" resname="icon detail">
+        <source>icon detail</source>
+        <target>__icon detail</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -233,6 +233,30 @@
         <source>Le Continent a bien été supprimé</source>
         <target>Le Continent a bien été supprimé</target>
       </trans-unit>
+      <trans-unit id="j75Vu7n" resname="Ticket index">
+        <source>Ticket index</source>
+        <target>Liste des Tickets</target>
+      </trans-unit>
+      <trans-unit id="s2BIFax" resname="Annee">
+        <source>Annee</source>
+        <target>Annee</target>
+      </trans-unit>
+      <trans-unit id="XAIUcWY" resname="NumeroTicket">
+        <source>NumeroTicket</source>
+        <target>Numero Ticket</target>
+      </trans-unit>
+      <trans-unit id="j4a8CcI" resname="DateVente">
+        <source>DateVente</source>
+        <target>Date de Vente</target>
+      </trans-unit>
+      <trans-unit id="dP5ctFl" resname="icon detail">
+        <source>icon detail</source>
+        <target>bi bi-ticket-detailed</target>
+      </trans-unit>
+      <trans-unit id="detail" resname="detail">
+        <source>detail</source>
+        <target>détail</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
