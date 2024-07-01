@@ -251,11 +251,95 @@
       </trans-unit>
       <trans-unit id="dP5ctFl" resname="icon detail">
         <source>icon detail</source>
-        <target>bi bi-ticket-detailed</target>
+        <target>bi bi-ticket-detailed-fill</target>
       </trans-unit>
-      <trans-unit id="detail" resname="detail">
+      <trans-unit id="nAIRxR0" resname="detail">
         <source>detail</source>
         <target>détail</target>
+      </trans-unit>
+      <trans-unit id="G6LVbUp" resname="nomArticle">
+        <source>nomArticle</source>
+        <target>nom Article</target>
+      </trans-unit>
+      <trans-unit id="t1H6JKT" resname="prixAchat">
+        <source>prixAchat</source>
+        <target>prix Achat</target>
+      </trans-unit>
+      <trans-unit id="YtemsSE" resname="volume">
+        <source>volume</source>
+        <target>volume</target>
+      </trans-unit>
+      <trans-unit id="jdWuuQ2" resname="titrage">
+        <source>titrage</source>
+        <target>titrage</target>
+      </trans-unit>
+      <trans-unit id="KaU7wGn" resname="nomMarque">
+        <source>nomMarque</source>
+        <target>nom Marque</target>
+      </trans-unit>
+      <trans-unit id="e2a7o40" resname="nomCouleur">
+        <source>nomCouleur</source>
+        <target>nom Couleur</target>
+      </trans-unit>
+      <trans-unit id="SF6YmVE" resname="nomType">
+        <source>nomType</source>
+        <target>nom Type</target>
+      </trans-unit>
+      <trans-unit id="qaeCoSj" resname="Edit Article">
+        <source>Edit Article</source>
+        <target>Modifier Article</target>
+      </trans-unit>
+      <trans-unit id="F7QsEmm" resname="Article index">
+        <source>Article index</source>
+        <target>Liste des Articles</target>
+      </trans-unit>
+      <trans-unit id="vRPV6y0" resname="NomArticle">
+        <source>NomArticle</source>
+        <target>Nom Article</target>
+      </trans-unit>
+      <trans-unit id="hmfSQrH" resname="NomMarque">
+        <source>NomMarque</source>
+        <target>Nom Marque</target>
+      </trans-unit>
+      <trans-unit id="cAWNDLc" resname="NomCouleur">
+        <source>NomCouleur</source>
+        <target>Nom Couleur</target>
+      </trans-unit>
+      <trans-unit id="nWjJkVQ" resname="NomType">
+        <source>NomType</source>
+        <target>Nom Type</target>
+      </trans-unit>
+      <trans-unit id="h7kEVq2" resname="PrixAchat">
+        <source>PrixAchat</source>
+        <target>Prix Achat</target>
+      </trans-unit>
+      <trans-unit id="sQ_5Ztc" resname="Volume">
+        <source>Volume</source>
+        <target>Volume</target>
+      </trans-unit>
+      <trans-unit id="VBQWthX" resname="Titrage">
+        <source>Titrage</source>
+        <target>Titrage</target>
+      </trans-unit>
+      <trans-unit id="s_lbUm2" resname="Marque Inconnue">
+        <source>Marque Inconnue</source>
+        <target>Marque Inconnue</target>
+      </trans-unit>
+      <trans-unit id="H.AWLG8" resname="Couleur Inconnue">
+        <source>Couleur Inconnue</source>
+        <target>Couleur Inconnue</target>
+      </trans-unit>
+      <trans-unit id="oxsFe2L" resname="Type Inconnu">
+        <source>Type Inconnu</source>
+        <target>Type Inconnu</target>
+      </trans-unit>
+      <trans-unit id="3ikIv3b" resname="New Article">
+        <source>New Article</source>
+        <target>Créer un Article</target>
+      </trans-unit>
+      <trans-unit id="kZIZXY7" resname="Create new Article">
+        <source>Create new Article</source>
+        <target>Créer un Article</target>
       </trans-unit>
     </body>
   </file>

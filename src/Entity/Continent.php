@@ -76,7 +76,7 @@ class Continent
         return $this;
     }
 
-    public function __toString() {
-        return $this->nom;
-    }
+    // public function __toString() {
+    //     return $this->nom;
+    // }
 }

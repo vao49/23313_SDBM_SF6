@@ -219,23 +219,111 @@
       </trans-unit>
       <trans-unit id="j75Vu7n" resname="Ticket index">
         <source>Ticket index</source>
-        <target>__Ticket index</target>
+        <target>Ticket index</target>
       </trans-unit>
       <trans-unit id="s2BIFax" resname="Annee">
         <source>Annee</source>
-        <target>__Annee</target>
+        <target>Year</target>
       </trans-unit>
       <trans-unit id="XAIUcWY" resname="NumeroTicket">
         <source>NumeroTicket</source>
-        <target>__NumeroTicket</target>
+        <target>Ticket Number</target>
       </trans-unit>
       <trans-unit id="j4a8CcI" resname="DateVente">
         <source>DateVente</source>
-        <target>__DateVente</target>
+        <target>selling date</target>
       </trans-unit>
       <trans-unit id="dP5ctFl" resname="icon detail">
         <source>icon detail</source>
-        <target>__icon detail</target>
+        <target>bi bi-ticket-detailed-fill</target>
+      </trans-unit>
+      <trans-unit id="nAIRxR0" resname="detail">
+        <source>detail</source>
+        <target>detail</target>
+      </trans-unit>
+      <trans-unit id="G6LVbUp" resname="nomArticle">
+        <source>nomArticle</source>
+        <target>__nomArticle</target>
+      </trans-unit>
+      <trans-unit id="t1H6JKT" resname="prixAchat">
+        <source>prixAchat</source>
+        <target>__prixAchat</target>
+      </trans-unit>
+      <trans-unit id="YtemsSE" resname="volume">
+        <source>volume</source>
+        <target>__volume</target>
+      </trans-unit>
+      <trans-unit id="jdWuuQ2" resname="titrage">
+        <source>titrage</source>
+        <target>__titrage</target>
+      </trans-unit>
+      <trans-unit id="KaU7wGn" resname="nomMarque">
+        <source>nomMarque</source>
+        <target>__nomMarque</target>
+      </trans-unit>
+      <trans-unit id="e2a7o40" resname="nomCouleur">
+        <source>nomCouleur</source>
+        <target>__nomCouleur</target>
+      </trans-unit>
+      <trans-unit id="SF6YmVE" resname="nomType">
+        <source>nomType</source>
+        <target>__nomType</target>
+      </trans-unit>
+      <trans-unit id="qaeCoSj" resname="Edit Article">
+        <source>Edit Article</source>
+        <target>__Edit Article</target>
+      </trans-unit>
+      <trans-unit id="F7QsEmm" resname="Article index">
+        <source>Article index</source>
+        <target>__Article index</target>
+      </trans-unit>
+      <trans-unit id="vRPV6y0" resname="NomArticle">
+        <source>NomArticle</source>
+        <target>__NomArticle</target>
+      </trans-unit>
+      <trans-unit id="hmfSQrH" resname="NomMarque">
+        <source>NomMarque</source>
+        <target>__NomMarque</target>
+      </trans-unit>
+      <trans-unit id="cAWNDLc" resname="NomCouleur">
+        <source>NomCouleur</source>
+        <target>__NomCouleur</target>
+      </trans-unit>
+      <trans-unit id="nWjJkVQ" resname="NomType">
+        <source>NomType</source>
+        <target>__NomType</target>
+      </trans-unit>
+      <trans-unit id="h7kEVq2" resname="PrixAchat">
+        <source>PrixAchat</source>
+        <target>__PrixAchat</target>
+      </trans-unit>
+      <trans-unit id="sQ_5Ztc" resname="Volume">
+        <source>Volume</source>
+        <target>__Volume</target>
+      </trans-unit>
+      <trans-unit id="VBQWthX" resname="Titrage">
+        <source>Titrage</source>
+        <target>__Titrage</target>
+      </trans-unit>
+      <trans-unit id="s_lbUm2" resname="Marque Inconnue">
+        <source>Marque Inconnue</source>
+        <target>__Marque Inconnue</target>
+      </trans-unit>
+      <trans-unit id="H.AWLG8" resname="Couleur Inconnue">
+        <source>Couleur Inconnue</source>
+        <target>__Couleur Inconnue</target>
+      </trans-unit>
+      <trans-unit id="oxsFe2L" resname="Type Inconnu">
+        <source>Type Inconnu</source>
+        <target>__Type Inconnu</target>
+      </trans-unit>
+      <trans-unit id="3ikIv3b" resname="New Article">
+        <source>New Article</source>
+        <target>__New Article</target>
+      </trans-unit>
+      <trans-unit id="kZIZXY7" resname="Create new Article">
+        <source>Create new Article</source>
+        <target>__Create new Article</target>
       </trans-unit>
     </body>
   </file>

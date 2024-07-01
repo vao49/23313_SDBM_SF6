@@ -31,6 +31,9 @@ class PaysType extends AbstractType
                 'attr' => ['class' => 'form-control'],
                 'query_builder' => function(ContinentRepository $repository) { 
                     return $repository->createQueryBuilder('u')->orderBy('u.nom', 'ASC');
+                },
+                'choice_label' => function (Continent $continent): string {
+                    return $continent ? strtoupper($continent->getNom()) : '';
                 }
             ])
         ;
