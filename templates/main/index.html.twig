@@ -1,20 +1,27 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MainController!{% endblock %}
+{% block title %}{% trans %}Bienvenue dans l'univers SDBM{% endtrans %}{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+{# <img src="{{asset('images/SDBM.png')}}" class="img-fluid"  > #}
+<div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card mt-5">
+                    <h1 class="text-success text-center">
+                          {% trans %}Bienvenue dans l'univers SDBM{% endtrans %}
+                    </h1>
+                    <div class="card-body text-center">
+                        <img src="{{asset('images/SDBM.png')}}"
+                             class="img-fluid mb-3"
+                             alt="GeeksforGeeks Logo"
+                             >
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/xampp/htdocs/test_6_4/src/Controller/MainController.php</code></li>
-        <li>Your template at <code>C:/xampp/htdocs/test_6_4/templates/main/index.html.twig</code></li>
-    </ul>
-</div>
+ 
+ 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
