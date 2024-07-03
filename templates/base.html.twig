@@ -21,9 +21,12 @@
 			<link
 			href="{{asset('css/main.css')}}" rel="stylesheet"/>
 			<!--  SweetAlert CSS -->
-			<link href="
-																https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.min.css
-																" rel="stylesheet">
+			<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.min.css" rel="stylesheet">
+			<style>
+				{# body {
+					background-image: url('{{ asset('images/SDBM.png') }}') !important;
+				} #}
+			</style>
 		{% endblock %}
 
 		{% block javascripts %}
@@ -32,8 +35,8 @@
 
 			<!--  SweetAlert JS -->
 			<script src="
-															https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.all.min.js
-															"></script>
+																											https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.all.min.js
+																											"></script>
 			{% block importmap %}
 				{{ importmap('app') }}
 			{% endblock %}
@@ -171,7 +174,8 @@
 #
 } {
 # {% for label, messages in app.flashes %}
-{% for message in messages %}Swal.fire({icon: "{{ label }}", title: "{{ label }}", text: {{ message|trans }}});{% endfor %}{% endfor %}#
+{% for message in messages %}
+Swal.fire({icon: "{{ label }}", title: "{{ label }}", text: {{ message|trans }}});{% endfor %}{% endfor %}#
 }
 		</script>
 	</body>
