@@ -161,22 +161,6 @@
 				</li>
 			</ul>
 		</footer>
-		<script>
-			{
-# Swal.fire(
-{title: "The Internet?", text: "That thing is still around?", icon: "question"}
-);
-#
-} {
-# Swal.fire(
-{icon: "success", title: "Oops...", text: "Something went wrong!", footer: '<a href="#">Why do I have this issue?</a>'}
-);
-#
-} {
-# {% for label, messages in app.flashes %}
-{% for message in messages %}
-Swal.fire({icon: "{{ label }}", title: "{{ label }}", text: {{ message|trans }}});{% endfor %}{% endfor %}#
-}
-		</script>
+
 	</body>
 </html>
