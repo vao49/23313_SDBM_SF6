@@ -1,11 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Typebiere{% endblock %}
+{% block title %}New Typebiere
+{% endblock %}
 
 {% block body %}
-    <h1>Create new Typebiere</h1>
+	<h1>Create new Typebiere</h1>
 
-    {{ include('typebiere/_form.html.twig') }}
+	{{ include('typebiere/_form.html.twig') }}
 
-    <a href="{{ path('app_typebiere_index') }}">back to list</a>
+	<a href="{{ path('app_typebiere_index') }}">back to list</a>
 {% endblock %}

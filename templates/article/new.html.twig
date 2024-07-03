@@ -1,15 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% trans %}New Article{% endtrans %}{% endblock %}
+{% block title %}
+	{% trans %}New Article{% endtrans %}
+{% endblock %}
 
 {% block body %}
-    <h1>{% trans %}Create new Article{% endtrans %}</h1>
+	<h1>{% trans %}Create new Article{% endtrans %}</h1>
 
-    {{ include('article/_form.html.twig') }}
+	{{ include('article/_form.html.twig') }}
 
-    <a href="{{ path('app_article_index') }}">
-        <button class="btn btn-warning  {% trans %}icon back{% endtrans %}">
+	<a href="{{ path('app_article_index') }}">
+		<button class="btn btn-warning  {% trans %}icon back{% endtrans %}">
 			{{ button_label|default('back to list')|trans }}
 		</button>
-    </a>
+	</a>
 {% endblock %}

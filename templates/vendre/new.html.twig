@@ -1,11 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Vendre{% endblock %}
+{% block title %}New Vendre
+{% endblock %}
 
 {% block body %}
-    <h1>Create new Vendre</h1>
+	<h1>Create new Vendre</h1>
 
-    {{ include('vendre/_form.html.twig') }}
+	{{ include('vendre/_form.html.twig') }}
 
-    <a href="{{ path('app_vendre_index', {'annee':  annee, 'no': no}) }}">back to list</a>
+	<a href="{{ path('app_vendre_index', {'annee': annee, 'no': no}) }}">back to list</a>
 {% endblock %}

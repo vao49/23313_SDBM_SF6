@@ -1,27 +1,23 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% trans %}Bienvenue dans l'univers SDBM{% endtrans %}{% endblock %}
+{% block title %}
+	{% trans %}Bienvenue dans l'univers SDBM{% endtrans %}
+{% endblock %}
 
 {% block body %}
-{# <img src="{{asset('images/SDBM.png')}}" class="img-fluid"  > #}
-<div class="container">
-        <div class="row">
-            <div class="col-md-6 mx-auto">
-                <div class="card mt-5">
-                    <h1 class="text-success text-center">
-                          {% trans %}Bienvenue dans l'univers SDBM{% endtrans %}
-                    </h1>
-                    <div class="card-body text-center">
-                        <img src="{{asset('images/SDBM.png')}}"
-                             class="img-fluid mb-3"
-                             alt="GeeksforGeeks Logo"
-                             >
-
- 
- 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	{# <img src="{{asset('images/SDBM.png')}}" class="img-fluid"  > #}
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 mx-auto">
+				<div class="card mt-5">
+					<h1 class="text-success text-center">
+						{% trans %}Bienvenue dans l'univers SDBM{% endtrans %}
+					</h1>
+					<div class="card-body text-center">
+						<img src="{{asset('images/SDBM.png')}}" class="img-fluid mb-3" alt="GeeksforGeeks Logo">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 {% endblock %}

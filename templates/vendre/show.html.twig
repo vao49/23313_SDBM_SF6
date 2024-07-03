@@ -1,34 +1,35 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Vendre{% endblock %}
+{% block title %}Vendre
+{% endblock %}
 
 {% block body %}
-    <h1>Vendre</h1>
+	<h1>Vendre</h1>
 
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Quantite</th>
-                <td>{{ vendre.quantite }}</td>
-            </tr>
-            <tr>
-                <th>PrixVente</th>
-                <td>{{ vendre.prixVente }}</td>
-            </tr>
-            <tr>
-                <th>Annee</th>
-                <td>{{ vendre.annee }}</td>
-            </tr>
-            <tr>
-                <th>NumeroTicket</th>
-                <td>{{ vendre.numeroTicket }}</td>
-            </tr>
-        </tbody>
-    </table>
+	<table class="table">
+		<tbody>
+			<tr>
+				<th>Quantite</th>
+				<td>{{ vendre.quantite }}</td>
+			</tr>
+			<tr>
+				<th>PrixVente</th>
+				<td>{{ vendre.prixVente }}</td>
+			</tr>
+			<tr>
+				<th>Annee</th>
+				<td>{{ vendre.annee }}</td>
+			</tr>
+			<tr>
+				<th>NumeroTicket</th>
+				<td>{{ vendre.numeroTicket }}</td>
+			</tr>
+		</tbody>
+	</table>
 
-    <a href="{{ path('app_vendre_index') }}">back to list</a>
+	<a href="{{ path('app_vendre_index') }}">back to list</a>
 
-    <a href="{{ path('app_vendre_edit', {'annee': vendre.annee}) }}">edit</a>
+	<a href="{{ path('app_vendre_edit', {'annee': vendre.annee}) }}">edit</a>
 
-    {{ include('vendre/_delete_form.html.twig') }}
+	{{ include('vendre/_delete_form.html.twig') }}
 {% endblock %}

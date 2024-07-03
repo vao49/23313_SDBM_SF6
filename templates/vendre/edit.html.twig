@@ -1,13 +1,14 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit Vendre{% endblock %}
+{% block title %}Edit Vendre
+{% endblock %}
 
 {% block body %}
-    <h1>Edit Vendre</h1>
+	<h1>Edit Vendre</h1>
 
-    {{ include('vendre/_form.html.twig', {'button_label': 'Update'}) }}
+	{{ include('vendre/_form.html.twig', {'button_label': 'Update'}) }}
 
-    <a href="{{ path('app_vendre_index', {'annee':  annee, 'no': no}) }}" class="btn btn-warning {% trans %}icon back{% endtrans %}">{% trans %}back to list{% endtrans %}</a>
+	<a href="{{ path('app_vendre_index', {'annee': annee, 'no': no}) }}" class="btn btn-warning {% trans %}icon back{% endtrans %}">{% trans %}back to list{% endtrans %}</a>
 
-    {{ include('vendre/_delete_form.html.twig') }}
+	{{ include('vendre/_delete_form.html.twig') }}
 {% endblock %}
