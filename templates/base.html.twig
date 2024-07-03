@@ -25,6 +25,8 @@
 			<style>
 				body {
 					background-image: url('{{ asset('images/SDBM.png') }}') !important;
+					background-repeat: no-repeat;
+					background-size: cover;
 				}
 			</style>
 		{% endblock %}
@@ -35,8 +37,8 @@
 
 			<!--  SweetAlert JS -->
 			<script src="
-																											https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.all.min.js
-																											"></script>
+																															https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.all.min.js
+																															"></script>
 			{% block importmap %}
 				{{ importmap('app') }}
 			{% endblock %}
