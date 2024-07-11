@@ -243,7 +243,7 @@
       </trans-unit>
       <trans-unit id="G6LVbUp" resname="nomArticle">
         <source>nomArticle</source>
-        <target>__nomArticle</target>
+        <target>Articulo Nombre</target>
       </trans-unit>
       <trans-unit id="t1H6JKT" resname="prixAchat">
         <source>prixAchat</source>
